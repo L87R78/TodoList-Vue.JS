@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/TodoList-VueJS/'
+    publicPath: 'https://github.com/L87R78/TodoList-VueJS.git'
 }
