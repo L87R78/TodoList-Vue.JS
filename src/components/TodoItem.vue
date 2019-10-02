@@ -4,7 +4,7 @@
       <input type="checkbox" v-on:change="markComplete" />
       {{todo.title}}
     </p>
-    <button @click="$emit('del-todo', todo.id)" class="delete">X</button>
+    <button @click="$emit('del-todo', todo.id)" class="delete"><i class="fas fa-trash"></i></button>
   </div>
 </template>
 
@@ -22,18 +22,25 @@ export default {
 
 <style lang="scss">
 .textBoxs {
-  border: 1px solid red;
+  
+  background: rgba(158, 173, 177, 0.678);
+  //max-width: 500px;
+  //margin: auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
   .delete {
-   margin: 15px 5px;
-   cursor: pointer;
+    margin: 15px 5px;
+    cursor: pointer;
+    border: none;
+    background: rgba(158, 173, 177, 0);
+    .fas {
+      font-size: 18px;
+      color: rgba(255, 0, 0, 0.555);
+    }
   }
   .is_comlete {
-  //border: 1px solid green;
-  text-decoration: line-through;
+    text-decoration: line-through;
+  }
 }
-}
-
-
 </style>

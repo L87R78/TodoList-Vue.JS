@@ -1,3 +1,9 @@
 <template>
-    <h2>Hello About</h2>
+    <h2>Get Out Of Here ;)</h2>
 </template>
+
+<style lang="scss">
+    h2 {
+        text-align: center;
+    }
+</style>
