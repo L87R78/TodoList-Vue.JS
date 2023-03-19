@@ -5,10 +5,10 @@
       <input type="submit" name="Submit" class="btn_submit" />
     </form>
   </div>
-</template>>
+</template>
 
 <script>
-//import uuid from 'uuid';
+
 export default {
   name: "AddTodo",
   data() {
@@ -20,12 +20,10 @@ export default {
     addTodo(e) {
       e.preventDefault();
       const newTodo = {
-        //id: uuid.v4(),
         title: this.title,
         completed: false
       };
 
-      //send up to parrent
       this.$emit("add-todo", newTodo);
 
       this.title = "";

@@ -40,13 +40,13 @@ export default {
     fetch("https://jsonplaceholder.typicode.com/todos?_limit=3", {
       method: "get"
     })
-      .then(res => {
-        return res.json();
-      })
-      .then((jsonData) => {
-          this.todos = jsonData
-      })
-      .catch(err => console.error(err));
+    .then(res => {
+      return res.json();
+    })
+    .then((jsonData) => {
+        this.todos = jsonData
+    })
+    .catch(err => console.error(err));
   }
 };
 </script>

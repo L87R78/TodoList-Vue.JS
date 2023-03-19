@@ -22,10 +22,7 @@ export default {
 
 <style lang="scss">
 .textBoxs {
-  
   background: rgba(158, 173, 177, 0.678);
-  //max-width: 500px;
-  //margin: auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
